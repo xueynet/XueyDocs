@@ -1,1 +1,4 @@
+# npm包文件
 node_modules
+# 发布文件夹
+.vuepress/dist
