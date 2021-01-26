@@ -4,7 +4,7 @@ module.exports = {
     themeConfig: {
         logo: '/assets/img/logo.png',
         nav: [
-            { text: '概述', link: '/' },
+            { text: '概述', link: '/guide/' },
             { text: '模板', link: '/stl/' },
             { text: '插件', link: '/plugin/' },
             { text: '命令行', link: '/cli/' },
