@@ -25,16 +25,37 @@ export const zh: SidebarConfig = {
         '/stl/dynamic.md',
         '/stl/list.md',
         '/stl/content.md',
+        {
+          text: '标签',
+          link: '/stl/keywords/a.md',
+          children: [
+            '/stl/keywords/a.md',
+          ],
+        }
       ],
     },
   ],
-  '/stl/keywords/': [
+  '/stl/keywords/':[
     {
       isGroup: true,
       text: '标签',
       children: [
-        '/stl/keywords/README.md',
         '/stl/keywords/a.md',
+        {
+          text: '模板',
+          link: '/stl/README.md',
+          children: [
+            '/stl/README.md',
+            '/stl/glossary.md',
+            '/stl/elements.md',
+            '/stl/entities.md',
+            '/stl/include.md',
+            '/stl/context.md',
+            '/stl/dynamic.md',
+            '/stl/list.md',
+            '/stl/content.md',
+          ],
+        }
       ],
     },
   ],
