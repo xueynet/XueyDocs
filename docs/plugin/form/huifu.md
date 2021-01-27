@@ -6,17 +6,17 @@
 
 默认表单禁用了表单回复功能，我们需要进入表单 选项设置 界面，在表单回复选项中选择启用表单回复功能：
 
-![reply01.png](images/reply01.png)
+![reply01.png](/assets/img/plugin/form/reply01.png)
 
 ###后台回复表单
 
 启用表单回复功能后切换到 `数据列表` 界面，列表右侧将显示本条数据的回复状态，同时显示列中将新增可选项 `回复时间` 以及 `回复内容`。
 
-![reply02.png](images/reply02.png)
+![reply02.png](/assets/img/plugin/form/reply02.png)
 
 点击表单数据右侧的 回复 链接，系统将弹出回复界面：
 
-![reply03.png](images/reply03.png)
+![reply03.png](/assets/img/plugin/form/reply03.png)
 
 在回复界面中输入内容即可完成内容回复。
 
@@ -26,11 +26,11 @@
 
 进入 `表单` -> `表单模板` 界面，切换至 `数据显示模板`
 
-![reply04.png](images/reply04.png)
+![reply04.png](/assets/img/plugin/form/reply04.png)
 
 在预览下拉框中选择表单，系统将弹出数据显示预览窗口：
 
-![reply05.png](images/reply05.png)
+![reply05.png](/assets/img/plugin/form/reply05.png)
 
 可以看到，只有已回复的数据才会显示在数据列表中。
 

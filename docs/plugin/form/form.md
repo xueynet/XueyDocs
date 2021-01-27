@@ -8,4 +8,4 @@
 
 表单插件安装好之后，站点左侧菜单下将出现表单菜单，如下图所示：
 
-![1](images/01.png)
+![1](/assets/img/plugin/form/01.png)

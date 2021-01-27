@@ -4,4 +4,4 @@
 
 内容相册插件安装好之后，站点左侧菜单下将出现内容相册菜单，如下图所示：
 
-![01](images/01.png)
+![01](/assets/img/plugin/photos/01.png)
