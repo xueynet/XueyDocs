@@ -28,4 +28,16 @@ export const zh: SidebarConfig = {
       ],
     },
   ],
+    '/plugin/': [
+        {
+            isGroup: true,
+            text: '插件',
+            children: [
+                '/plugin/README.md',
+                '/plugin/form.md',
+                '/plugin/hints.md',
+                '/plugin/photos.md',
+            ],
+        },
+    ],
 }
