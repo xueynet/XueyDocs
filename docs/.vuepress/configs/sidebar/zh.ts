@@ -28,9 +28,7 @@ export const zh: SidebarConfig = {
         {
           text: '标签',
           link: '/stl/keywords/a.md',
-          children: [
-            '/stl/keywords/a.md',
-          ],
+          children: [],
         }
       ],
     },
@@ -44,17 +42,7 @@ export const zh: SidebarConfig = {
         {
           text: '模板',
           link: '/stl/README.md',
-          children: [
-            '/stl/README.md',
-            '/stl/glossary.md',
-            '/stl/elements.md',
-            '/stl/entities.md',
-            '/stl/include.md',
-            '/stl/context.md',
-            '/stl/dynamic.md',
-            '/stl/list.md',
-            '/stl/content.md',
-          ],
+          children: [],
         }
       ],
     },
