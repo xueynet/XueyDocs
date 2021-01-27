@@ -28,4 +28,14 @@ export const zh: SidebarConfig = {
       ],
     },
   ],
+  '/stl/keywords/': [
+    {
+      isGroup: true,
+      text: '标签',
+      children: [
+        '/stl/keywords/README.md',
+        '/stl/keywords/a.md',
+      ],
+    },
+  ],
 }
