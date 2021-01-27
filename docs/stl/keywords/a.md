@@ -57,7 +57,7 @@
 
 如果设置了 channelIndex 属性，系统将寻找对应索引的栏目并将上下文切换到此栏目。
 
-···html
+```html
 <!-- 链接到首页 -->
 <stl:a channelIndex="首页"></stl:a>
 ```
@@ -135,3 +135,93 @@
 **href - 链接地址**
 
 指定具体的链接地址，可以用“@”开头表示当前网站根目录，用“~”开头表示系统根目录。
+
+**host - 链接域名**
+
+如设置链接地址将以此开头
+
+**queryString - 链接参数**
+
+链接地址后的参数
+
+### 示例
+
+**显示内容列表链接**
+
+下面的例子显示当前栏目的内容列表，内容链接为内容标题。
+
+```html
+<stl:contents>
+  <stl:a target="_blank"></stl:a><br>
+</stl:contents>
+```
+
+解析后的 HTML 代码：
+
+```html
+  <a href="/a/index.html" target="_blank">stl:a 标签用法</a><br>
+  <a href="/a/2.html" target="_blank">stl:a 标签示例（单独使用）</a><br>
+  <a href="/a/1.html" target="_blank">stl:a 标签示例（嵌套使用）</a><br>
+```
+
+**显示栏目列表链接**
+
+下面的例子显示栏目索引为"首页"的下级栏目列表。
+
+下面的例子显示当前栏目的内容列表，内容链接为内容标题。
+
+```html
+<stl:channels channelIndex="首页" groupChannel="主导航">
+  <stl:a target="_blank"></stl:a><br>
+</stl:channels>
+```
+
+解析后的 HTML 代码：
+
+```html
+  <a href="/getting-started/index.html" target="_blank">起 步</a><br>
+  <a href="/channels/4.html" target="_blank">STL标签</a><br>
+  <a href="/channels/79.html" target="_blank">STL实体</a><br>
+```
+
+**显示指定的栏目链接**
+
+下面的例子显示栏目索引为"首页"的栏目链接，点击链接后在新窗口打开。
+
+```html
+<stl:a channelIndex="首页" target="_blank"></stl:a>
+```
+
+解析后的 HTML 代码：
+
+```html
+<a href="http://docs.xuey.net/" target="_blank">首 页</a>
+```
+
+**在栏目链接中显示指定的文字**
+
+下面的例子显示栏目索引为"首页"的栏目链接，链接文字为"转到首页"。
+
+```html
+<stl:a channelIndex="首页" target="\_blank"> 转到首页 </stl:a>
+```
+
+解析后的 HTML 代码：
+
+```html
+<a href="http://docs.xuey.net/" target="_blank"> 转到首页 </a>
+```
+
+**根据栏目索引与栏目名称显示栏目的链接**
+
+下面的例子显示栏目索引为"首页"的子栏目名称为“起步”的链接，链接文字为"转到起步页"。
+
+```html
+<stl:a channelIndex="首页" channelName="起步" target="_blank"> 转到起步页 </stl:a>
+```
+
+解析后的 HTML 代码：
+
+```html
+<a href="http://docs.xuey.net/" target="_blank"> 转到起步页 </a>
+```
