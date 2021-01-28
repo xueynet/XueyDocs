@@ -41,7 +41,7 @@ export const zh: SidebarConfig = {
         '/stl/keywords/a.md',
         '/stl/keywords/action.md',
         {
-          text: '模板',
+          text: '返回上级',
           link: '/stl/README.md',
           children: [],
         }
@@ -75,7 +75,7 @@ export const zh: SidebarConfig = {
                 '/plugin/form/personbiaodan.md',
                 '/plugin/form/guanli.md',
                 {
-                  text: '插件',
+                  text: '返回上级',
                   link: '/plugin/README.md',
                   children: [],
                 }
