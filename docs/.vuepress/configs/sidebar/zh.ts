@@ -53,36 +53,32 @@ export const zh: SidebarConfig = {
             isGroup: true,
             text: '插件',
             children: [
-                '/plugin/README.md',
+                '/plugin/form/README.md',
+                '/plugin/hints/README.md',
+                '/plugin/photos/README.md',
+                '/plugin/comments/README.md',
+                '/plugin/login/README.md',
+                '/plugin/restriction/README.md',
+            ],
+        },
+    ],
+    '/plugin/form': [
+        {
+            isGroup: true,
+            text: '表单插件',
+            children: [
+                '/plugin/form/README.md',
+                '/plugin/form/start.md',
+                '/plugin/form/biaodan.md',
+                '/plugin/form/captcha.md',
+                '/plugin/form/huifu.md',
+                '/plugin/form/personbiaodan.md',
+                '/plugin/form/guanli.md',
                 {
-                    text: '表单插件',
-                    link: '/stl/plugin/form/form.md',
-                    children: [
-                        '/stl/plugin/form/start.md',
-                        '/stl/plugin/form/guanli.md',
-                        '/stl/plugin/form/biaodan.md',
-                        '/stl/plugin/form/personbiaodan.md',
-                        '/stl/plugin/form/huifu.md',
-                        '/stl/plugin/form/captcha.md',
-                    ],
-                },
-                {
-                    text: '内容点击量插件',
-                    link: '/stl/plugin/hints/hints.md',
-                    children: [
-                        '/stl/plugin/hints/shezhi.md',
-                        '/stl/plugin/hints/houtai.md',
-                        '/stl/plugin/hints/qiantai.md',
-                        '/stl/plugin/hints/why.md',
-                    ],
-                },
-                {
-                    text: '内容相册插件',
-                    link: '/stl/plugin/photos/photos.md',
-                    children: [
-                        '/stl/plugin/photos/use.md',
-                    ],
-                },
+                  text: '插件',
+                  link: '/plugin/README.md',
+                  children: [],
+                }
             ],
         },
     ],
