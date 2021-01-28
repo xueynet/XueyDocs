@@ -54,3 +54,111 @@ Js脚本事件可以是一段可运行的Js代码，也可以是一个Js函数�
 * containerId：动态加载完毕后将更新的HTML 元素的Id
 * data：返回的结果数据
 * status：返回的 HTTP 状态码
+
+**onError**
+
+此事件仅在请求发生错误时调用(对于请求，永远不能同时有错误和成功回调)。
+
+在此事件中可以直接调用以下参数：
+
+* containerId：动态加载完毕后将更新的HTML 元素的Id
+* err：错误信息
+* status：返回的 HTTP 状态码
+
+**onComplete**
+
+不管请求是否成功，都会调用此事件。这个事件是最后触发的，可以通过 onComplete 事件对已更新的页面元素进行调整。
+
+* containerId：动态加载完毕后将更新的HTML 元素的Id
+* err：错误信息
+* data：返回的结果数据
+* status：返回的 HTTP 状态码
+
+### 属性
+
+| 属性 | 说明 |
+|:-----|:-----|
+| context	| 所处上下文 |
+| inline	| 是否在行内显示 |
+| onBeforeSend	| 请求前触发事件 |
+| onSuccess	| 请求成功后触发事件 |
+| onComplete	| 请求结束后触发事件 |
+| onError	| 请求失败后触发事件 |
+
+**context - 所处上下文**
+
+所处上下文
+
+* "Content" 内容
+* "Channel" 栏目
+* "SqlContent" 获取数据库数据
+
+**inline - 是否在行内显示**
+
+设置动态内容是否在行内显示，默认为false。
+
+* "true" 动态内容在行内显示
+* "false" 动态内容另起一行显示
+
+**onBeforeSend - 请求前触发事件**
+
+这个事件是在 Ajax 请求启动之前触发的，它允许你再动态访问之前进行预处理操作。
+
+在此事件中可以直接调用以下参数：
+
+* containerId：动态加载完毕后将更新的 HTML 元素的 Id
+
+**onSuccess - 请求成功后触发事件**
+
+此事件仅在请求成功时调用(服务器没有错误，数据没有错误)。
+
+在此事件执行完毕后，页面才会更新数据，可以通过 onSuccess 事件对返回的数据进行调整。
+
+在此事件中可以直接调用以下参数：
+
+* containerId：动态加载完毕后将更新的 HTML 元素的 Id
+* data：返回的结果数据
+* status：返回的 HTTP 状态码
+
+**onComplete - 请求结束后触发事件**
+
+不管请求是否成功，都会调用此事件。这个事件是最后触发的，可以通过 onComplete 事件对已更新的页面元素进行调整。
+
+* containerId：动态加载完毕后将更新的 HTML 元素的 Id
+* err：错误信息
+* data：返回的结果数据
+* status：返回的 HTTP 状态码
+
+**onError - 请求失败后触发事件**
+
+此事件仅在请求发生错误时调用(对于请求，永远不能同时有错误和成功回调)。
+
+在此事件中可以直接调用以下参数：
+
+* containerId：动态加载完毕后将更新的 HTML 元素的 Id
+* err：错误信息
+* status：返回的 HTTP 状态码
+
+### 示例
+
+**显示当前栏目的内容数**
+
+下面的例子实现页面的简体/繁体转换功能，如果希望所有页面均实现转换，需要把代码放到所有模板中（通常放到头部包含文件）。
+
+```html
+<stl:dynamic>
+    <stl:count type="Contents"></stl:count>
+</stl:dynamic>
+```
+
+**显示栏目"新闻"的内容列表**
+
+下面例子在页面中显示"新闻"栏目的前 10 篇内容列表。
+
+```html
+<stl:dynamic>
+  <stl:contents channelIndex="新闻" totalNum="10">
+      <stl:a target="_blank"></stl:a> <br />
+  </stl:contents>
+</stl:dynamic>
+```
