@@ -1,4 +1,4 @@
-# `<stl:action>` 执行动作
+# <stl:action> 执行动作
 
 ```html
 <stl:action type="动作类型"></stl:action>
