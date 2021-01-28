@@ -406,4 +406,85 @@ export const zh: SidebarConfig = {
             ],
         },
     ],
+    '/dictionary/': [
+        {
+            isGroup: true,
+            text: '字典',
+            children: [
+                {
+                    text: '介绍',
+                    link: '/dictionary/introduction/README.md',
+                    children: [],
+                },
+                {
+                    text: '表结构参考',
+                    link: '/dictionary/tables/README.md',
+                    children: [],
+                },
+            ],
+        },
+    ],
+    '/dictionary/introduction': [
+        {
+            isGroup: true,
+            text: '介绍',
+            children: [
+                '/dictionary/introduction/README.md',
+                '/dictionary/introduction/model_Content.md',
+                {
+                    text: '返回上级',
+                    link: '/dictionary/',
+                    children: [],
+                }
+            ],
+        },
+    ],
+    '/dictionary/tables': [
+        {
+            isGroup: true,
+            text: '表结构参考',
+            children: [
+                '/dictionary/tables/README.md',
+                '/dictionary/tables/siteserver_Administrator.md',
+                '/dictionary/tables/siteserver_AdministratorsInRoles.md',
+                '/dictionary/tables/siteserver_Area.md',
+                '/dictionary/tables/siteserver_Channel.md',
+                '/dictionary/tables/siteserver_ChannelGroup.md',
+                '/dictionary/tables/siteserver_Config.md',
+                '/dictionary/tables/siteserver_ContentCheck.md',
+                '/dictionary/tables/siteserver_ContentGroup.md',
+                '/dictionary/tables/siteserver_Count.md',
+                '/dictionary/tables/siteserver_DbCache.md',
+                '/dictionary/tables/siteserver_Department.md',
+                '/dictionary/tables/siteserver_ErrorLog.md',
+                '/dictionary/tables/siteserver_Keyword.md',
+                '/dictionary/tables/siteserver_Log.md',
+                '/dictionary/tables/siteserver_PermissionsInRoles.md',
+                '/dictionary/tables/siteserver_PluginConfig.md',
+                '/dictionary/tables/siteserver_Plugin.md',
+                '/dictionary/tables/siteserver_RelatedField.md',
+                '/dictionary/tables/siteserver_RelatedFieldItem.md',
+                '/dictionary/tables/siteserver_Role.md',
+                '/dictionary/tables/siteserver_Site.md',
+                '/dictionary/tables/siteserver_SiteLog.md',
+                '/dictionary/tables/siteserver_SitePermissions.md',
+                '/dictionary/tables/siteserver_Special.md',
+                '/dictionary/tables/siteserver_Table.md',
+                '/dictionary/tables/siteserver_TableMetadata.md',
+                '/dictionary/tables/siteserver_TableStyle.md',
+                '/dictionary/tables/siteserver_TableStyleItem.md',
+                '/dictionary/tables/siteserver_Tag.md',
+                '/dictionary/tables/siteserver_Template.md',
+                '/dictionary/tables/siteserver_TemplateLog.md',
+                '/dictionary/tables/siteserver_TemplateMatch.md',
+                '/dictionary/tables/siteserver_User.md',
+                '/dictionary/tables/siteserver_UserLog.md',
+                {
+                    text: '返回上级',
+                    link: '/dictionary/',
+                    children: [],
+                }
+            ],
+        },
+    ],
 }

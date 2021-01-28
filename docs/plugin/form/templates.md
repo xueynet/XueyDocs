@@ -2,7 +2,7 @@
 
 表单插件自带两个表单模板：用于表单提交的 `submit1` 模板，以及用于显示表单数据列表的 `list1` 模板。
 
-表单模板作为文件夹存储在表单插件中，可以进入 XYCMS 系统根目录下的 `plugins\sscms.form\wwwroot\assets\form\templates` 目录，可以看到 `submit1` 以及 `list1` 两个子目录。
+表单模板作为文件夹存储在表单插件中，可以进入 XYCMS 系统根目录下的 `plugins\xycms.form\wwwroot\assets\form\templates` 目录，可以看到 `submit1` 以及 `list1` 两个子目录。
 
 通常不建议编辑默认模板，因为插件升级的时候会覆盖默认模板，使编辑后的模板失效。
 
