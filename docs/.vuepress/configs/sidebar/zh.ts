@@ -242,4 +242,168 @@ export const zh: SidebarConfig = {
             ],
         },
     ],
+    '/api/': [
+        {
+            isGroup: true,
+            text: '接口',
+            children: [
+                {
+                    text: 'Contents内容API',
+                    link: '/api/contents/README.md',
+                    children: [],
+                },
+                {
+                    text: 'Channels栏目API',
+                    link: '/api/channels/README.md',
+                    children: [],
+                },
+                {
+                    text: 'Administrators管理员API',
+                    link: '/api/administrators/README.md',
+                    children: [],
+                },
+                {
+                    text: 'Users用户API',
+                    link: '/api/users/README.md',
+                    children: [],
+                },
+                {
+                    text: 'STL模板语言API',
+                    link: '/api/stl/README.md',
+                    children: [],
+                },
+                {
+                    text: '其他API',
+                    link: '/api/other/README.md',
+                    children: [],
+                },
+            ],
+        },
+    ],
+    '/api/contents': [
+        {
+            isGroup: true,
+            text: 'Contents内容API',
+            children: [
+                '/api/contents/README.md',
+                '/api/contents/list.md',
+                '/api/contents/get.md',
+                '/api/contents/create.md',
+                '/api/contents/update.md',
+                '/api/contents/delete.md',
+                '/api/contents/check.md',
+                {
+                    text: '返回上级',
+                    link: '/api/',
+                    children: [],
+                }
+            ],
+        },
+    ],
+    '/api/channels': [
+        {
+            isGroup: true,
+            text: 'Channels栏目API',
+            children: [
+                '/api/channels/README.md',
+                '/api/channels/list.md',
+                '/api/channels/get.md',
+                '/api/channels/create.md',
+                '/api/channels/update.md',
+                '/api/channels/delete.md',
+                {
+                    text: '返回上级',
+                    link: '/api/',
+                    children: [],
+                }
+            ],
+        },
+    ],
+    '/api/administrators': [
+        {
+            isGroup: true,
+            text: 'Administrators管理员API',
+            children: [
+                '/api/administrators/README.md',
+                '/api/administrators/create.md',
+                '/api/administrators/update.md',
+                '/api/administrators/delete.md',
+                '/api/administrators/get.md',
+                '/api/administrators/list.md',
+                '/api/administrators/login.md',
+                '/api/administrators/logout.md',
+                '/api/administrators/resetPassword.md',
+                {
+                    text: '返回上级',
+                    link: '/api/',
+                    children: [],
+                }
+            ],
+        },
+    ],
+    '/api/users': [
+        {
+            isGroup: true,
+            text: 'Users用户API',
+            children: [
+                '/api/users/README.md',
+                '/api/users/create.md',
+                '/api/users/update.md',
+                '/api/users/delete.md',
+                '/api/users/get.md',
+                '/api/users/getAvatar.md',
+                '/api/users/updateAvatar.md',
+                '/api/users/list.md',
+                '/api/users/login.md',
+                '/api/users/logout.md',
+                '/api/users/resetPassword.md',
+                '/api/users/createLog.md',
+                '/api/users/getLogs.md',
+                {
+                    text: '返回上级',
+                    link: '/api/',
+                    children: [],
+                }
+            ],
+        },
+    ],
+    '/api/stl': [
+        {
+            isGroup: true,
+            text: 'STL模板语言API',
+            children: [
+                '/api/stl/README.md',
+                '/api/stl/a.md',
+                '/api/stl/channel.md',
+                '/api/stl/channels.md',
+                '/api/stl/content.md',
+                '/api/stl/contents.md',
+                '/api/stl/site.md',
+                '/api/stl/sites.md',
+                '/api/stl/sqlContent.md',
+                '/api/stl/sqlContents.md',
+                {
+                    text: '返回上级',
+                    link: '/api/',
+                    children: [],
+                }
+            ],
+        },
+    ],
+    '/api/other': [
+        {
+            isGroup: true,
+            text: '其他API',
+            children: [
+                '/api/other/README.md',
+                '/api/other/captchaCheck.md',
+                '/api/other/ping.md',
+                {
+                    text: '返回上级',
+                    link: '/api/',
+                    children: [],
+                }
+            ],
+        },
+    ],
 }

@@ -1,12 +1,12 @@
 # 加密解密数据库连接字符串
 
-可以通过显示版本命令 `sscms version` 同时显示非加密数据库连接字符串以及加密数据库连接字符串。
+可以通过显示版本命令 `xycms version` 同时显示非加密数据库连接字符串以及加密数据库连接字符串。
 
-在SSCMS 系统根目录运行版本命令：
+在XYCMS 系统根目录运行版本命令：
 
 ```sh
 PS C:\Windows\system32> cd C:\github\cms\cms-staging\SiteServer.Web
-PS C:\github\cms\cms-staging\SiteServer.Web> sscms version
+PS C:\github\cms\cms-staging\SiteServer.Web> xycms version
 欢迎使用 SiteServer Cli 命令行工具
 
 SiteServer CLI 版本号: 6.9.0

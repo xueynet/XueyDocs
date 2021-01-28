@@ -7,13 +7,13 @@
 :::
 
 ::: tip
-数据库恢复命令不仅可以用于恢复 SSCMS 系统数据，还可用于任何需要恢复数据文件至数据库的场合。
+数据库恢复命令不仅可以用于恢复 XYCMS 系统数据，还可用于任何需要恢复数据文件至数据库的场合。
 :::
 
 ### 用法
 
 ```sh
-sscms plugin publish
+xycms plugin publish
     -v, --version=VALUE
     -h, --help
 ```
@@ -28,7 +28,7 @@ sscms plugin publish
 | --help | -h | 命令说明 |
 
 ::: tip
-恢复命令默认将检测数据库结构并将数据库结构设置为当前版本的SSCMS数据结构，如果此命令用于非SSCMS场合，请设置 **--data-only** 参数，命令将不再检测并同步SSCMS数据库结构。
+恢复命令默认将检测数据库结构并将数据库结构设置为当前版本的XYCMS数据结构，如果此命令用于非XYCMS场合，请设置 **--data-only** 参数，命令将不再检测并同步XYCMS数据库结构。
 :::
 
 ### 示例
@@ -43,7 +43,7 @@ sscms plugin publish
 
 数据库恢复命令需要通过`-d`或`--directory=`加文件夹名称的方式指定需要恢复的备份存储文件夹，如：
 
-`sscms restore -d mydir`
+`xycms restore -d mydir`
 
 此命令将从mydir文件夹中获取备份数据并恢复到数据库中，恢复命令将逐一遍历备份文件夹中的文件，将文件内容完整导入至恢复数据库中，结束后，打开数据库，将看到数据库中已包含了需要恢复的数据库表及数据，数据恢复成功。
 
@@ -55,10 +55,10 @@ sscms plugin publish
 
 ![04](/assets/img/cli/commands/04.png)
 
-打开restore.config，可以看到里面存在连接 SSCMS 所用到的数据库类型 DatabaseType 以及连接字符串 ConnectionString。
+打开restore.config，可以看到里面存在连接 XYCMS 所用到的数据库类型 DatabaseType 以及连接字符串 ConnectionString。
 
 将命令行切换到此文件夹，运行：
 
-`sscms restore -c backup.config -d 'backup/2019-01-20'`
+`xycms restore -c backup.config -d 'backup/2019-01-20'`
 
 命令结束后打开数据库，可以看到数据恢复成功。

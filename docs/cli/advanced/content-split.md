@@ -6,20 +6,20 @@
 
 ### 第一步：运行数据库备份命令
 
-首先使用数据库备份命令 `sscms backup` 将系统数据库备份至文件夹中。
+首先使用数据库备份命令 `xycms backup` 将系统数据库备份至文件夹中。
 
-将命令行切换到 SSCMS 所在文件夹，运行备份命令：
+将命令行切换到 XYCMS 所在文件夹，运行备份命令：
 
 ```sh
-sscms backup -d backup
+xycms backup -d backup
 ```
 
 ### 第二步：运行系统升级命令
 
-然后我们需要使用系统升级命令 `sscms update` 并指定 `--content-split` 拆分内容表参数：
+然后我们需要使用系统升级命令 `xycms update` 并指定 `--content-split` 拆分内容表参数：
 
 ```sh
-sscms update -d backup --content-split
+xycms update -d backup --content-split
 ```
 
 ### 第三步：创建新数据库
@@ -35,10 +35,10 @@ sscms update -d backup --content-split
 
 ### 第四步：恢复数据
 
-我们需要使用数据库恢复命令 `sscms resore` 将已拆分内容表的数据恢复至新数据库中。
+我们需要使用数据库恢复命令 `xycms resore` 将已拆分内容表的数据恢复至新数据库中。
 
 ```sh
-sscms restore -d update
+xycms restore -d update
 ```
 
 至此，数据库拆分内容表工作完成，可以将老的数据库备份后删除。

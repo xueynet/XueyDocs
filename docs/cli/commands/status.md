@@ -1,11 +1,11 @@
 # status 查看当前状态命令
 
-查看当前版本命令，用于查看 SiteServer CLI/SSCMS 版本以及数据库信息。
+查看当前版本命令，用于查看 SiteServer CLI/XYCMS 版本以及数据库信息。
 
 ### 用法
 
 ```sh
-sscms status
+xycms status
     -h, --help
 ```
 
@@ -16,28 +16,28 @@ sscms status
 | --help | -h | 命令说明 |
 
 ::: tip
-如果当前目录为 SSCMS 根目录或者命令使用 **--config-file** 指定配置文件 Web.config，版本命令除显示 SiteServer CLI 版本信息，还将显示对应的 SSCMS 系统版本以及数据库连接字符串信息。
+如果当前目录为 XYCMS 根目录或者命令使用 **--config-file** 指定配置文件 Web.config，版本命令除显示 SiteServer CLI 版本信息，还将显示对应的 XYCMS 系统版本以及数据库连接字符串信息。
 :::
 
 ### 示例
 
 #### 基本使用
 
-在非 SSCMS 系统根目录运行版本命令：
+在非 XYCMS 系统根目录运行版本命令：
 
 ```sh
-PS C:\Windows\system32> sscms version
+PS C:\Windows\system32> xycms version
 欢迎使用 SiteServer Cli 命令行工具
 
 SiteServer CLI 版本号: 6.9.0
 当前文件夹: C:\Windows\system32
 ```
 
-在SSCMS 系统根目录运行版本命令：
+在XYCMS 系统根目录运行版本命令：
 
 ```sh
 PS C:\Windows\system32> cd C:\github\cms\cms-staging\SiteServer.Web
-PS C:\github\cms\cms-staging\SiteServer.Web> sscms version
+PS C:\github\cms\cms-staging\SiteServer.Web> xycms version
 欢迎使用 SiteServer Cli 命令行工具
 
 SiteServer CLI 版本号: 6.9.0
