@@ -3,13 +3,13 @@
 数据库备份命令，用于备份数据库结构以及数据至指定文件夹中。
 
 ::: tip
-数据库备份命令不仅可以用于备份 SSCMS 系统数据，还可用于任何需要备份数据库至文件的场合。
+数据库备份命令不仅可以用于备份 XYCMS 系统数据，还可用于任何需要备份数据库至文件的场合。
 :::
 
 ### 用法
 
 ```sh
-sscms data backup
+xycms data backup
     -d, --directory=VALUE
     --content-split
     -h, --help
@@ -33,17 +33,17 @@ sscms data backup
 
 备份命令目前还不支持增量备份，只支持完全备份，即备份命令将把数据库中所存的所有数据备份至文件夹中，如果数据库中数据量太大，请不要频繁使用备份命令，以免影响数据库性能。
 
-例如我们希望备份指定的 SSCMS 系统，找到系统所在文件夹路径，将命令行切换到此文件夹，并运行备份命令：
+例如我们希望备份指定的 XYCMS 系统，找到系统所在文件夹路径，将命令行切换到此文件夹，并运行备份命令：
 
 ```sh
 PS C:\Windows\system32> cd E:\wwwroot\
-PS E:\wwwroot> sscms backup
+PS E:\wwwroot> xycms backup
 ```
 
 可以看命令开始执行数据库备份操作，界面将显示备份进度：
 
 ```sh
-PS E:\wwwroot> sscms backup
+PS E:\wwwroot> xycms backup
 欢迎使用 SiteServer Cli 命令行工具
 
 数据库类型: SqlServer
@@ -54,18 +54,18 @@ PS E:\wwwroot> sscms backup
 -----------------------------------------------------------------------------
 |           _model_Content            |                 839                 |
 |       _model_Content_Archive        |                  0                  |
-|       sscms_AccessToken        |                 28                  |
-|            sscms_Ad            |                  1                  |
-|          sscms_AdArea          |                  1                  |
-|        sscms_AdMaterial        |                  1                  |
-|      sscms_Administrator       |                  9                  |
-|  sscms_AdministratorsInRoles   |                 20                  |
-|           sscms_Adv            |                  0                  |
-|          sscms_Advert          |                  1                  |
-|      sscms_Advertisement       |                  1                  |
-|     sscms_AdvImageClassify     |                  0                  |
-|     sscms_AdvImageContent      |                  0                  |
-|           sscms_Area           |                  4                  |
+|       xycms_AccessToken        |                 28                  |
+|            xycms_Ad            |                  1                  |
+|          xycms_AdArea          |                  1                  |
+|        xycms_AdMaterial        |                  1                  |
+|      xycms_Administrator       |                  9                  |
+|  xycms_AdministratorsInRoles   |                 20                  |
+|           xycms_Adv            |                  0                  |
+|          xycms_Advert          |                  1                  |
+|      xycms_Advertisement       |                  1                  |
+|     xycms_AdvImageClassify     |                  0                  |
+|     xycms_AdvImageContent      |                  0                  |
+|           xycms_Area           |                  4                  |
 
 ...
 
@@ -114,8 +114,8 @@ backup
     |   ├── _metadata.json
     |   ├── 1.json
     |   └── 2.json
-    ├── sscms_Administrator
-    ├── sscms_AdministratorsInRoles
+    ├── xycms_Administrator
+    ├── xycms_AdministratorsInRoles
     ...
 ```
 
@@ -133,7 +133,7 @@ backup
 
 将命令行切换到此文件夹，运行：
 
-`sscms backup -c backup.config`
+`xycms backup -c backup.config`
 
 命令结束后打开文件夹，可以看到多出了备份文件夹 backup：
 
@@ -143,7 +143,7 @@ backup
 
 如果需要将备份文件存储在其他文件夹中，可以通过`-d`或`--directory=`加文件夹名称的方式指定备份存储文件夹。
 
-`sscms backup -c backup.config -d mydir`
+`xycms backup -c backup.config -d mydir`
 
 命令结束后打开文件夹，可以看到多出了备份文件夹 mydir：
 
