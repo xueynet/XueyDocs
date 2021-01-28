@@ -21,3 +21,37 @@
 ::: tip
 包含文件中还可以再嵌套 `<stl:include>` 包含文件标签，进一步细分代码块。
 :::
+
+### 属性
+
+| 属性 | 说明 |
+|:------|:-----|
+| file | 包含文件路径 |
+
+**file - 包含文件路径**
+
+需要包含的文件路径。
+
+包含本站文件时，可以添加或者省略"@"地址通配符，例如：
+
+```html
+<stl:include file="/include/footer.html"></stl:include>
+```
+
+和
+
+```html
+<stl:include file="@/include/footer.html"></stl:include>
+```
+
+效果是一样的。
+
+### 示例
+
+**在模版中包含页脚文件**
+
+下面的例子在模版中包含文件名称为"footer.html"的页脚文件。
+
+```html
+<stl:include file="@/include/footer.html"></stl:include>
+```
