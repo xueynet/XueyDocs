@@ -91,7 +91,7 @@ type 属性用于明确需要显示内容的具体字段，如果未设置，系
 * "author" 内容作者
 * "source" 内容来源
 * "content" 内容正文
-* "pageContent" 能够翻页显示的内容正文
+* "pageContent" 能够分页显示的内容正文
 * "tags" 内容标签
 * "hits" 内容总点击量
 * "hitsByDay" 日点击量

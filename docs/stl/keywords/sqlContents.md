@@ -109,8 +109,8 @@
 | stl:query | 定义数据库查询语句 |
 | stl:queryString | 定义数据库查询语句 |
 | stl:sqlContent | 数据库值 |
-| stl:pageItems | 翻页项容器 |
-| stl:pageItem | 翻页项 |
+| stl:pageItems | 分页项容器 |
+| stl:pageItem | 分页项 |
 
 ### 属性
 

@@ -48,10 +48,10 @@ stl:search 标签有默认显示方式和自定义显示方式两种表现形式
 
 如果只定义搜索结果模板，可以省略`<stl:yes>`，直接将模板放到`<stl:search>` 中。
 
-自定义搜索提交表单需要在 `<stl:search>` 中嵌入显示搜索结果的标签，必须包含的标签有 `<stl:pageContents>` 和 `<stl:pageitems>` 及 `<stl:pageItem>` 标签，分别用于显示搜索结果分页列表和搜索结果翻页项。
+自定义搜索提交表单需要在 `<stl:search>` 中嵌入显示搜索结果的标签，必须包含的标签有 `<stl:pageContents>` 和 `<stl:pageitems>` 及 `<stl:pageItem>` 标签，分别用于显示搜索结果分页列表和搜索结果分页项。
 
 `<stl:search>` 内必须包含一个 `<stl:pageContents>` 标签，用于显示搜索结果内容列表，详情请参考 `<stl:pageContents>` 标签。
-`<stl:search>` 内必须包含一个 `<stl:pageitems>` 标签和多个 `<stl:pageItem>` 标签，用于显示翻页项，详情请参考 `<stl:pageItems>` 标签及 `<stl:pageItem>` 标签。
+`<stl:search>` 内必须包含一个 `<stl:pageitems>` 标签和多个 `<stl:pageItem>` 标签，用于显示分页项，详情请参考 `<stl:pageItems>` 标签及 `<stl:pageItem>` 标签。
 `<stl:search>` 中除以上标签外可以添加任意 Html 标签或 STL 标签，用于组织显示样式。
 
 ### 属性

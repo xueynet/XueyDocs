@@ -25,9 +25,9 @@
 | 父标签 | 说明 |
 |:------|:-----|
 | stl:contents | 内容列表 |
-| stl:pageContents | 翻页内容列表 |
+| stl:pageContents | 分页内容列表 |
 | stl:sqlContents | 数据列表 |
-| stl:pageSqlContents | 翻页数据列表 |
+| stl:pageSqlContents | 分页数据列表 |
 
 
 ### 子标签

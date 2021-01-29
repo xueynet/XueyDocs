@@ -27,9 +27,9 @@ SelectedItem类型的列表项所显示的内容由 selected 属性控制，默�
 | stl:channels | 栏目列表 |
 | stl:contents | 内容列表 |
 | stl:each | 列表项循环 |
-| stl:pageChannels | 翻页栏目列表 |
-| stl:pageContents | 翻页内容列表 |
-| stl:pageSqlContents | 翻页数据库列表 |
+| stl:pageChannels | 分页栏目列表 |
+| stl:pageContents | 分页内容列表 |
+| stl:pageSqlContents | 分页数据库列表 |
 | stl:sqlContents | 数据库列表 |
 | stl:sites | 站点列表 |
 

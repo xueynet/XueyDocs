@@ -41,7 +41,7 @@ type 属性用于明确需要显示栏目的具体字段，如果未设置，系
 
 如果希望将栏目的属性值放到 HTML 元素或者 STL 元素的属性中使用，请使用`{stl:channel}` 实体写法，如：`<a title="{stl:channel type=title}">`。
 
-如果需要获取栏目正文并翻页显示，请设置type属性为 pageContent，同时配合 `stl:pageItem` 标签实现翻页效果。
+如果需要获取栏目正文并分页显示，请设置type属性为 pageContent，同时配合 `stl:pageItem` 标签实现分页效果。
 
 ### 解析
 
@@ -85,7 +85,7 @@ type 属性用于明确需要显示栏目的具体字段，如果未设置，系
 * "id" 栏目 Id。
 * "channelIndex" 栏目索引。
 * "content" Content。
-* "pageContent" 能够翻页显示的栏目正文。
+* "pageContent" 能够分页显示的栏目正文。
 * "addDate" 显示栏目添加日期。
 * "imageUrl" 显示栏目图片。
 * "itemIndex" 项次序数字。

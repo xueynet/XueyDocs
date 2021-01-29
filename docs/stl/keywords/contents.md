@@ -532,7 +532,7 @@ itemClass 属性只有当列表布局为表格 `layout="table"` 时才起作用�
 <br>
 <a href="/getting-started/3.html">STL 实体说明</a>
 <br>
-<a href="/getting-started/2.html">STL 翻页标签与实现</a>
+<a href="/getting-started/2.html">STL 分页标签与实现</a>
 <br>
 <a href="/getting-started/1.html">STL 地址通配符</a>
 <br>
