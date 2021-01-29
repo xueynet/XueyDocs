@@ -124,3 +124,12 @@ STL 元素最终将解析为 HTML 标签或者纯文字。
 | `stl:tabs` 页签切换 | 通过 stl:tabs 标签在模板中显示页签切换 |
 | `stl:tags` 标签 | 通过 stl:tags 标签在模板中显示内容标签 |
 | `stl:zoom` 文字缩放 | 通过 stl:zoom 标签在模板中实现文字缩放功能 |
+
+<style>
+table th:first-of-type {
+    width: 40%;
+}
+table th:nth-of-type(2) {
+    width: 60%;
+}
+</style>

@@ -57,3 +57,12 @@ XYCMS 在数据库中创建的表主要由三部分组成：
 ### 插件表
 
 插件表是XYCMS插件所使用的表，每个插件都可以有自己的表结构，插件表通常以插件Id作为开头。
+
+<style>
+table th:first-of-type {
+    width: 20%;
+}
+table th:nth-of-type(2) {
+    width: 80%;
+}
+</style>

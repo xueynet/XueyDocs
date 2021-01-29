@@ -48,3 +48,7 @@
 |Summary	|Text		||内容摘要|
 |Author	|VarChar	|255	|作者|
 |Source	|VarChar	|255	|来源|
+
+<style>
+@@import url("/assets/css/table_four_col.css");
+</style>

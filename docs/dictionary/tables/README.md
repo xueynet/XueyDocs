@@ -11,3 +11,7 @@ API密钥表，存储访问REST API的密钥。
 |RateLimit	|Integer	|	|访问频率限制|
 |AddDate	|DateTime|		|添加时间|
 |UpdatedDate|	DateTime|		|更新时间|
+
+<style>
+@@import url("/assets/css/table_four_col.css");
+</style>
