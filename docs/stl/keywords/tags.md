@@ -31,3 +31,70 @@
 `<stl:tags>` 标签对应的实体为`{stl:tags}`。
 
 ### 属性
+
+| 属性 | 说明 |
+|:------|:-----|
+| tagLevel | 标签级别 |
+| totalNum | 显示标签数目 |
+| isOrderByCount | 是否按引用次数排序 |
+| theme | 主题样式 |
+| context | 所处上下文 |
+
+**tagLevel - 标签级别**
+
+标签的级别，页面将显示等于或大于此级别的标签。
+
+**totalNum - 显示标签数目**
+
+显示标签数目
+
+**isOrderByCount - 是否按引用次数排序**
+
+是否按引用次数排序
+
+"true" 是
+"false" 否
+
+**theme - 主题样式**
+
+显示的主题样式
+
+"Default" 默认样式
+"Style1" 样式一
+"Style2" 样式二
+
+**context - 所处上下文**
+
+所处上下文
+
+"Content" 仅显示当前内容包含的标签
+"Channel" 显示站点内所有标签
+
+### 示例
+
+**默认方式显示标签**
+
+下面的例子显示站点内的所有标签，显示数量为 30。
+
+```html
+<stl:tags context="Channel" totalNum="30"></stl:tags>
+```
+
+**自定义标签显示样式**
+
+下面的例子采用自定义的方式显示标签。
+
+```html
+<div class="mod">
+  <div class="mBody">
+  <div class="tagHead">标签列表</div>
+    <ul class="tagCloud">
+      <stl:tags context="Channel" totalNum="30">
+        <li class="tag_popularity_{Tag.Level}">
+          <stl:a target="_blank" href="/utils/tags.html?tagName={Tag.Name}">{Tag.Name}</stl:a>
+        </li>
+      </stl:tags>
+    </ul>
+  </div>
+</div>
+```

@@ -82,6 +82,7 @@ export const zh: SidebarConfig = {
         '/stl/keywords/sqlCOntents.md',
         '/stl/keywords/tabs.md',
         '/stl/keywords/tags.md',
+        '/stl/keywords/user.md',
         '/stl/keywords/value.md',
         '/stl/keywords/video.md',
         '/stl/keywords/yes.md',
