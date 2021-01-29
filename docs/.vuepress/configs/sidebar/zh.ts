@@ -8,6 +8,8 @@ export const zh: SidebarConfig = {
       children: [
         '/guide/README.md',
         '/guide/structure.md',
+        '/guide/features.md',
+        '/guide/glossary.md',
       ],
     },
   ],
