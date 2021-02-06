@@ -10,6 +10,7 @@ export const zh: SidebarConfig = {
         '/guide/structure.md',
         '/guide/features.md',
         '/guide/glossary.md',
+        '/guide/deploy.md',
       ],
     },
   ],
