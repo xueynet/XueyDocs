@@ -6,8 +6,8 @@ actions:
   - text: 项目概述
     link: /guide/
     type: primary
-  - text: 发布说明
-    link: /guide/
+  - text: 部署说明
+    link: /guide/deploy.html
     type: secondary
 features:
   - title: 极速开发
