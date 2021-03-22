@@ -30,11 +30,11 @@
 * `assets`: 后台运行需要的资源文件，如css、js等，其中包含menus文件夹，用于存储后台权限与菜单配置。
 * `wwwroot`: 静态资源目录，如果存在主站将作为主站的文件夹，所有位于此文件夹内的文件均可被公开访问。
 * `wwwroot/SiteFiles`: 用于存放站群公用文件，如管理员头像、站点模板文件等。
-* `wwwroot/**`: 其中**代表特定的文件夹，如果在 SS CMS 中创建站点（非主站），系统将存放站点文件于指定的文件夹中。
+* `wwwroot/**`: 其中**代表特定的文件夹，如果在 XYCMS 中创建站点（非主站），系统将存放站点文件于指定的文件夹中。
 * `wwwroot/index.html`: 系统默认使用 index.html 文件作为默认页面。
 * `*.dll`: .NET Core类库。
 * `appsettings.json`: .NET Core APP 配置文件。
-* `xycms.exe`: XYCMS 主程序，运行此文件即可启动 SS CMS 系统。
+* `xycms.exe`: XYCMS 主程序，运行此文件即可启动 XYCMS 系统。
 * `xycms.json`: XYCMS 配置文件，用于存放数据库连接字符串、缓存连接字符串等关键信息。
 * `web.config`: Windows操作系统下IIS部署使用，非IIS部署可以删除。
 
