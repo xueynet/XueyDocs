@@ -20,7 +20,7 @@ footer: MIT Licensed | Copyright © 2021 xuey.net
 ---
 
 
-> 文档适用于当前最新版站群系统，如有错误，欢迎电邮至admin@xuey.net，我们将第一时间改正。
+> 文档适用于当前最新版站群系统，如有错误，欢迎电邮至chenlian@xuey.net，我们将第一时间改正。
 
 ### 功能实现
 - [√] 支持功能插件扩展
