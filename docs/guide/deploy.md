@@ -57,3 +57,8 @@ XYCMS 通过反向代理服务器（如 IIS、Nginx 或 Apache）间接与 Inter
 ### Windows + IIS
 
 内容待完善
+
+
+### Docker
+
+内容待完善

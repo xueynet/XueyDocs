@@ -50,13 +50,13 @@ type 属性可以是指定的字符串，代表"自定义模板语言"中定义�
 
 需要获取值的类型。此属性只可属于以下可能的取值的一种。
 
-"siteName" 站点名称
-"siteUrl" 站点的域名地址
-"date" 当前日期（不支持 isDynamic 属性）
-"dateOfTraditional" 带农历的当前日期（不支持 isDynamic 属性）
-“seoTitle" seo标题
-"keywords" seo关键字
-"description" seo描述
+* "siteName" 站点名称
+* "siteUrl" 站点的域名地址
+* "date" 当前日期（不支持 isDynamic 属性）
+* "dateOfTraditional" 带农历的当前日期（不支持 isDynamic 属性）
+* “seoTitle" seo标题
+* "keywords" seo关键字
+* "description" seo描述
 
 **formatString - 显示的格式**
 
