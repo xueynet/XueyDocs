@@ -77,6 +77,7 @@
 * "content" 内容上下文。
 * "channel" 栏目上下文。
 * "sqlContent" Sql 内容上下文。
+* "Special" 专题上下文
 * "site" 站点上下文。
 
 ```html

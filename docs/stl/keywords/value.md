@@ -54,6 +54,9 @@ type 属性可以是指定的字符串，代表"自定义模板语言"中定义�
 "siteUrl" 站点的域名地址
 "date" 当前日期（不支持 isDynamic 属性）
 "dateOfTraditional" 带农历的当前日期（不支持 isDynamic 属性）
+“seoTitle" seo标题
+"keywords" seo关键字
+"description" seo描述
 
 **formatString - 显示的格式**
 
@@ -217,4 +220,12 @@ to 代表替换后的文字。
 
 ```html
 <stl:value type="SiteName"></stl:value>
+```
+
+**显示关键字**
+
+下面的例子显示站点名称。(注意：seoTitle、keywords、description会自动根据当前上下文（首页、栏目、内容页、专题页)获取当前所设置的实体属性
+
+```html
+{stl.keywords}
 ```
