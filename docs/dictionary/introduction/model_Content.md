@@ -48,6 +48,10 @@
 |Summary	|Text		||内容摘要|
 |Author	|VarChar	|255	|作者|
 |Source	|VarChar	|255	|来源|
+|Price  |Float  |8/2  |单价|
+|OldPrice  |Float  |8/2  |原价|
+|StockQuantity|	Integer|		|库存|
+
 
 <style>
 @@import url("/assets/css/table_four_col.css");

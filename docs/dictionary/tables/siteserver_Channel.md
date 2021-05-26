@@ -31,3 +31,4 @@
 |Keywords	|VarChar|	255	|关键字列表，各关键词间用英文逗号“,”分割。|
 |Description	|VarChar|	255	|页面描述|
 |Children	|Array|		|下级栏目数组|
+|ChannelType  |VarChar  |255  |栏目类型：常规、产品|
