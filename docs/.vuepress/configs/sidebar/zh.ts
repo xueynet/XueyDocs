@@ -3,7 +3,6 @@ import type { SidebarConfig } from '@vuepress/theme-default'
 export const zh: SidebarConfig = {
   '/guide/': [
     {
-      isGroup: true,
       text: '概述',
       children: [
         '/guide/README.md',
@@ -16,7 +15,6 @@ export const zh: SidebarConfig = {
   ],
   '/stl/': [
     {
-      isGroup: true,
       text: '模板',
       children: [
         '/stl/README.md',
@@ -31,14 +29,12 @@ export const zh: SidebarConfig = {
         {
           text: '标签',
           link: '/stl/keywords/a.md',
-          children: [],
         }
       ],
     },
   ],
   '/stl/keywords/':[
     {
-      isGroup: true,
       text: '标签',
       children: [
         '/stl/keywords/a.md',
@@ -94,14 +90,12 @@ export const zh: SidebarConfig = {
         {
           text: '返回上级',
           link: '/stl/README.md',
-          children: [],
         }
       ],
     },
   ],
     '/plugin/': [
         {
-            isGroup: true,
             text: '插件',
             children: [
                 '/plugin/comments/README.md',
@@ -115,7 +109,6 @@ export const zh: SidebarConfig = {
     ],
     '/plugin/form': [
         {
-            isGroup: true,
             text: '表单插件',
             children: [
                 '/plugin/form/README.md',
@@ -128,14 +121,12 @@ export const zh: SidebarConfig = {
                 {
                   text: '返回上级',
                   link: '/plugin/README.md',
-                  children: [],
                 }
             ],
         },
     ],
     '/plugin/hints': [
         {
-            isGroup: true,
             text: '内容点击量插件',
             children: [
                 '/plugin/hints/README.md',
@@ -146,14 +137,12 @@ export const zh: SidebarConfig = {
                 {
                     text: '返回上级',
                     link: '/plugin/README.md',
-                    children: [],
                 }
             ],
         },
     ],
     '/plugin/photos': [
         {
-            isGroup: true,
             text: '内容相册插件',
             children: [
                 '/plugin/photos/README.md',
@@ -161,37 +150,31 @@ export const zh: SidebarConfig = {
                 {
                     text: '返回上级',
                     link: '/plugin/README.md',
-                    children: [],
                 }
             ],
         },
     ],
     '/cli/': [
         {
-            isGroup: true,
             text: '命令行',
             children: [
                 {
                     text: '介绍',
                     link: '/cli/introduction/README.md',
-                    children: [],
                 },
                 {
                     text: '命令',
                     link: '/cli/commands/README.md',
-                    children: [],
                 },
                 {
                     text: '深入',
                     link: '/cli/advanced/README.md',
-                    children: [],
                 },
             ],
         },
     ],
     '/cli/introduction': [
         {
-            isGroup: true,
             text: '介绍',
             children: [
                 '/cli/introduction/README.md',
@@ -199,14 +182,12 @@ export const zh: SidebarConfig = {
                 {
                     text: '返回上级',
                     link: '/cli/',
-                    children: [],
                 }
             ],
         },
     ],
     '/cli/commands': [
         {
-            isGroup: true,
             text: '命令',
             children: [
                 '/cli/commands/README.md',
@@ -225,14 +206,12 @@ export const zh: SidebarConfig = {
                 {
                     text: '返回上级',
                     link: '/cli/',
-                    children: [],
                 }
             ],
         },
     ],
     '/cli/advanced': [
         {
-            isGroup: true,
             text: '深入',
             children: [
                 '/cli/advanced/README.md',
@@ -242,52 +221,43 @@ export const zh: SidebarConfig = {
                 {
                     text: '返回上级',
                     link: '/cli/',
-                    children: [],
                 }
             ],
         },
     ],
     '/api/': [
         {
-            isGroup: true,
             text: '接口',
             children: [
                 {
                     text: 'Contents内容API',
                     link: '/api/contents/README.md',
-                    children: [],
                 },
                 {
                     text: 'Channels栏目API',
                     link: '/api/channels/README.md',
-                    children: [],
                 },
                 {
                     text: 'Administrators管理员API',
                     link: '/api/administrators/README.md',
-                    children: [],
                 },
                 {
                     text: 'Users用户API',
                     link: '/api/users/README.md',
-                    children: [],
                 },
                 {
                     text: 'STL模板语言API',
                     link: '/api/stl/README.md',
-                    children: [],
                 },
                 {
                     text: '其他API',
                     link: '/api/other/README.md',
-                    children: [],
                 },
             ],
         },
     ],
     '/api/contents': [
         {
-            isGroup: true,
             text: 'Contents内容API',
             children: [
                 '/api/contents/README.md',
@@ -300,14 +270,12 @@ export const zh: SidebarConfig = {
                 {
                     text: '返回上级',
                     link: '/api/',
-                    children: [],
                 }
             ],
         },
     ],
     '/api/channels': [
         {
-            isGroup: true,
             text: 'Channels栏目API',
             children: [
                 '/api/channels/README.md',
@@ -319,14 +287,12 @@ export const zh: SidebarConfig = {
                 {
                     text: '返回上级',
                     link: '/api/',
-                    children: [],
                 }
             ],
         },
     ],
     '/api/administrators': [
         {
-            isGroup: true,
             text: 'Administrators管理员API',
             children: [
                 '/api/administrators/README.md',
@@ -341,14 +307,12 @@ export const zh: SidebarConfig = {
                 {
                     text: '返回上级',
                     link: '/api/',
-                    children: [],
                 }
             ],
         },
     ],
     '/api/users': [
         {
-            isGroup: true,
             text: 'Users用户API',
             children: [
                 '/api/users/README.md',
@@ -367,14 +331,12 @@ export const zh: SidebarConfig = {
                 {
                     text: '返回上级',
                     link: '/api/',
-                    children: [],
                 }
             ],
         },
     ],
     '/api/stl': [
         {
-            isGroup: true,
             text: 'STL模板语言API',
             children: [
                 '/api/stl/README.md',
@@ -390,14 +352,12 @@ export const zh: SidebarConfig = {
                 {
                     text: '返回上级',
                     link: '/api/',
-                    children: [],
                 }
             ],
         },
     ],
     '/api/other': [
         {
-            isGroup: true,
             text: '其他API',
             children: [
                 '/api/other/README.md',
@@ -406,32 +366,27 @@ export const zh: SidebarConfig = {
                 {
                     text: '返回上级',
                     link: '/api/',
-                    children: [],
                 }
             ],
         },
     ],
     '/dictionary/': [
         {
-            isGroup: true,
             text: '字典',
             children: [
                 {
                     text: '介绍',
                     link: '/dictionary/introduction/README.md',
-                    children: [],
                 },
                 {
                     text: '表结构参考',
                     link: '/dictionary/tables/README.md',
-                    children: [],
                 },
             ],
         },
     ],
     '/dictionary/introduction': [
         {
-            isGroup: true,
             text: '介绍',
             children: [
                 '/dictionary/introduction/README.md',
@@ -439,14 +394,12 @@ export const zh: SidebarConfig = {
                 {
                     text: '返回上级',
                     link: '/dictionary/',
-                    children: [],
                 }
             ],
         },
     ],
     '/dictionary/tables': [
         {
-            isGroup: true,
             text: '表结构参考',
             children: [
                 '/dictionary/tables/README.md',
@@ -487,7 +440,6 @@ export const zh: SidebarConfig = {
                 {
                     text: '返回上级',
                     link: '/dictionary/',
-                    children: [],
                 }
             ],
         },

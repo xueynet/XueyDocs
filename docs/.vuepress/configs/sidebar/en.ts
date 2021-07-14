@@ -3,7 +3,6 @@ import type { SidebarConfig } from '@vuepress/theme-default'
 export const en: SidebarConfig = {
   '/guide/': [
     {
-      isGroup: true,
       text: 'Guide',
       children: [
         '/guide/README.md',
@@ -22,7 +21,6 @@ export const en: SidebarConfig = {
   ],
   '/guide/advanced/': [
     {
-      isGroup: true,
       text: 'Advanced',
       children: [
         '/guide/advanced/markdown.md',
@@ -33,7 +31,6 @@ export const en: SidebarConfig = {
   ],
   '/reference/': [
     {
-      isGroup: true,
       text: 'VuePress Reference',
       children: [
         '/reference/cli.md',
@@ -47,14 +44,12 @@ export const en: SidebarConfig = {
   ],
   '/reference/bundler/': [
     {
-      isGroup: true,
       text: 'Bundlers Reference',
       children: ['/reference/bundler/webpack.md', '/reference/bundler/vite.md'],
     },
   ],
   '/reference/default-theme/': [
     {
-      isGroup: true,
       text: 'Default Theme Reference',
       children: [
         '/reference/default-theme/config.md',
@@ -66,7 +61,6 @@ export const en: SidebarConfig = {
   ],
   '/reference/plugin/': [
     {
-      isGroup: true,
       text: 'Official Plugins Reference',
       children: [
         '/reference/plugin/active-header-links.md',
