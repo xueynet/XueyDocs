@@ -104,6 +104,7 @@ export const zh: SidebarConfig = {
                 '/plugin/login/README.md',
                 '/plugin/photos/README.md',
                 '/plugin/restriction/README.md',
+                '/plugin/note/README.md',
             ],
         },
     ],
@@ -134,6 +135,20 @@ export const zh: SidebarConfig = {
                 '/plugin/hints/background.md',
                 '/plugin/hints/foreground.md',
                 '/plugin/hints/why.md',
+                {
+                    text: '返回上级',
+                    link: '/plugin/README.md',
+                }
+            ],
+        },
+    ],
+    '/plugin/note': [
+        {
+            text: '短信插件',
+            children: [
+                '/plugin/note/README.md',
+                '/plugin/note/start.md',
+                '/plugin/note/sendMsg.md',
                 {
                     text: '返回上级',
                     link: '/plugin/README.md',
