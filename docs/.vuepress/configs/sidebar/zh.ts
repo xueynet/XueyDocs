@@ -105,6 +105,7 @@ export const zh: SidebarConfig = {
                 '/plugin/photos/README.md',
                 '/plugin/restriction/README.md',
                 '/plugin/note/README.md',
+                '/plugin/qrcode/README.md',
             ],
         },
     ],
@@ -119,6 +120,20 @@ export const zh: SidebarConfig = {
                 '/plugin/form/templates.md',
                 '/plugin/form/reply.md',
                 '/plugin/form/captcha.md',
+                {
+                  text: '返回上级',
+                  link: '/plugin/README.md',
+                }
+            ],
+        },
+    ],
+    '/plugin/restriction': [
+        {
+            text: '表单插件',
+            children: [
+                '/plugin/restriction/README.md',
+                '/plugin/restriction/usage.md',
+                '/plugin/restriction/error.md',
                 {
                   text: '返回上级',
                   link: '/plugin/README.md',
@@ -149,6 +164,8 @@ export const zh: SidebarConfig = {
                 '/plugin/note/README.md',
                 '/plugin/note/start.md',
                 '/plugin/note/sendMsg.md',
+                '/plugin/note/admin.md',
+                '/plugin/note/home.md',
                 {
                     text: '返回上级',
                     link: '/plugin/README.md',
