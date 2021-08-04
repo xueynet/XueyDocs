@@ -173,6 +173,26 @@ export const zh: SidebarConfig = {
             ],
         },
     ],
+    '/plugin/login': [
+        {
+            text: '登录插件',
+            children: [
+                '/plugin/login/README.md',
+                '/plugin/login/usage.md',
+                '/plugin/login/login.md',
+                '/plugin/login/register.md',
+                '/plugin/login/sample.md',
+                '/plugin/login/weixin.md',
+                '/plugin/login/qq.md',
+                '/plugin/login/weibo.md',
+                '/plugin/login/error.md',
+                {
+                    text: '返回上级',
+                    link: '/plugin/README.md',
+                }
+            ],
+        },
+    ],
     '/plugin/photos': [
         {
             text: '内容相册插件',
