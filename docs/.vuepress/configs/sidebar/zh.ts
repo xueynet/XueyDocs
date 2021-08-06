@@ -13,6 +13,14 @@ export const zh: SidebarConfig = {
       ],
     },
   ],
+  '/update/': [
+    {
+      text: '更新',
+      children: [
+        '/update/README.md',
+      ],
+    },
+  ],
   '/stl/': [
     {
       text: '模板',
@@ -106,6 +114,8 @@ export const zh: SidebarConfig = {
                 '/plugin/restriction/README.md',
                 '/plugin/note/README.md',
                 '/plugin/qrcode/README.md',
+                '/plugin/payment/README.md',
+                '/plugin/shopping/README.md',
             ],
         },
     ],
@@ -129,11 +139,25 @@ export const zh: SidebarConfig = {
     ],
     '/plugin/restriction': [
         {
-            text: '表单插件',
+            text: '限制插件',
             children: [
                 '/plugin/restriction/README.md',
                 '/plugin/restriction/usage.md',
                 '/plugin/restriction/error.md',
+                {
+                  text: '返回上级',
+                  link: '/plugin/README.md',
+                }
+            ],
+        },
+    ],
+    '/plugin/shopping': [
+        {
+            text: '商品订单插件',
+            children: [
+                '/plugin/shopping/README.md',
+                '/plugin/shopping/settings.md',
+                '/plugin/shopping/background.md',
                 {
                   text: '返回上级',
                   link: '/plugin/README.md',

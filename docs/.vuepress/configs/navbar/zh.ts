@@ -6,6 +6,10 @@ export const zh: NavbarConfig = [
     link: '/guide/',
   },
   {
+    text: '更新',
+    link: '/update/',
+  },
+  {
     text: '模板',
     link: '/stl/',
   },
