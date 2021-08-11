@@ -13,6 +13,14 @@ export const zh: SidebarConfig = {
       ],
     },
   ],
+  '/update/': [
+    {
+      text: '更新',
+      children: [
+        '/update/README.md',
+      ],
+    },
+  ],
   '/stl/': [
     {
       text: '模板',
@@ -104,6 +112,10 @@ export const zh: SidebarConfig = {
                 '/plugin/login/README.md',
                 '/plugin/photos/README.md',
                 '/plugin/restriction/README.md',
+                '/plugin/note/README.md',
+                '/plugin/qrcode/README.md',
+                '/plugin/payment/README.md',
+                '/plugin/shopping/README.md',
             ],
         },
     ],
@@ -125,6 +137,34 @@ export const zh: SidebarConfig = {
             ],
         },
     ],
+    '/plugin/restriction': [
+        {
+            text: '限制插件',
+            children: [
+                '/plugin/restriction/README.md',
+                '/plugin/restriction/usage.md',
+                '/plugin/restriction/error.md',
+                {
+                  text: '返回上级',
+                  link: '/plugin/README.md',
+                }
+            ],
+        },
+    ],
+    '/plugin/shopping': [
+        {
+            text: '商品订单插件',
+            children: [
+                '/plugin/shopping/README.md',
+                '/plugin/shopping/settings.md',
+                '/plugin/shopping/background.md',
+                {
+                  text: '返回上级',
+                  link: '/plugin/README.md',
+                }
+            ],
+        },
+    ],
     '/plugin/hints': [
         {
             text: '内容点击量插件',
@@ -134,6 +174,42 @@ export const zh: SidebarConfig = {
                 '/plugin/hints/background.md',
                 '/plugin/hints/foreground.md',
                 '/plugin/hints/why.md',
+                {
+                    text: '返回上级',
+                    link: '/plugin/README.md',
+                }
+            ],
+        },
+    ],
+    '/plugin/note': [
+        {
+            text: '短信插件',
+            children: [
+                '/plugin/note/README.md',
+                '/plugin/note/start.md',
+                '/plugin/note/sendMsg.md',
+                '/plugin/note/admin.md',
+                '/plugin/note/home.md',
+                {
+                    text: '返回上级',
+                    link: '/plugin/README.md',
+                }
+            ],
+        },
+    ],
+    '/plugin/login': [
+        {
+            text: '登录插件',
+            children: [
+                '/plugin/login/README.md',
+                '/plugin/login/usage.md',
+                '/plugin/login/login.md',
+                '/plugin/login/register.md',
+                '/plugin/login/sample.md',
+                '/plugin/login/weixin.md',
+                '/plugin/login/qq.md',
+                '/plugin/login/weibo.md',
+                '/plugin/login/error.md',
                 {
                     text: '返回上级',
                     link: '/plugin/README.md',
