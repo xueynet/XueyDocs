@@ -51,6 +51,11 @@
 |Price  |Float  |8/2  |单价|
 |OldPrice  |Float  |8/2  |原价|
 |StockQuantity|	Integer|		|库存|
+|PriceUnit|	varchar|		|单位|
+|IsMainContent|	bool|		|是否主新闻|
+|AllowAddSubContent|	bool|		|允许添加子新闻|
+|RelatedContentId|	Integer|		|关联父级新闻Id|
+|SubContentNum|	Integer|		|子新闻数量|
 
 
 <style>
