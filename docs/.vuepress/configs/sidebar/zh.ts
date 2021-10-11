@@ -158,6 +158,7 @@ export const zh: SidebarConfig = {
             text: '商品订单插件',
             children: [
                 '/plugin/shopping/README.md',
+                '/plugin/shopping/update.md',
                 '/plugin/shopping/settings.md',
                 '/plugin/shopping/background.md',
                 {
