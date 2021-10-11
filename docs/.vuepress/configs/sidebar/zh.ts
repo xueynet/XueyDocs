@@ -18,6 +18,8 @@ export const zh: SidebarConfig = {
       text: '更新',
       children: [
         '/update/README.md',
+        '/update/8.0.2.md',
+        '/update/8.0.1.md',
       ],
     },
   ],
