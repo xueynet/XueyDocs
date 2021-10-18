@@ -9,3 +9,6 @@ yarn docs:dev
 
 # 构建静态文件
 yarn docs:build
+
+# 更新引用组件包
+yarn upgrade
