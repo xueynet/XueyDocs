@@ -108,6 +108,7 @@ export const zh: SidebarConfig = {
         {
             text: '插件',
             children: [
+                '/plugin/demo/README.md',
                 '/plugin/comments/README.md',
                 '/plugin/form/README.md',
                 '/plugin/hints/README.md',
@@ -118,6 +119,19 @@ export const zh: SidebarConfig = {
                 '/plugin/qrcode/README.md',
                 '/plugin/payment/README.md',
                 '/plugin/shopping/README.md',
+            ],
+        },
+    ],
+    '/plugin/demo': [
+        {
+            text: '示例插件',
+            children: [
+                '/plugin/demo/README.md',
+                '/plugin/demo/hello-world.md',
+                {
+                  text: '返回上级',
+                  link: '/plugin/README.md',
+                }
             ],
         },
     ],
