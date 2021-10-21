@@ -128,9 +128,29 @@ export const zh: SidebarConfig = {
             children: [
                 '/plugin/demo/README.md',
                 '/plugin/demo/hello-world.md',
+                '/plugin/demo/basic/README.md',
+                '/plugin/demo/sdk/README.md',
                 {
                   text: '返回上级',
                   link: '/plugin/README.md',
+                }
+            ],
+        },
+    ],
+    '/plugin/demo/basic': [
+        {
+            text: '插件开发基础',
+            children: [
+                '/plugin/demo/basic/README.md',
+                '/plugin/demo/basic/addMenu.md',
+                '/plugin/demo/basic/addDatebaseTable.md',
+                '/plugin/demo/basic/database.md',
+                '/plugin/demo/basic/addContentModel.md',
+                '/plugin/demo/basic/addStlParser.md',
+                '/plugin/demo/basic/apiCollection.md',
+                {
+                    text: '返回上级',
+                    link: '/plugin/demo/README.md',
                 }
             ],
         },
