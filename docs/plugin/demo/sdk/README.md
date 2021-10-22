@@ -26,7 +26,7 @@
 |interface IConfigApi	|插件及系统配置Api接口|
 |interface IContentApi	|内容Api接口|
 |interface IContentContext	|内容事件关联的上下文|
-|interface IContentInfo	|内容实体接口。 内容表默认名称为model_Content，XYCMS CMS 后台可以新建新的内容表，或者修改现有内容表的字段|
+|interface IContentInfo	|内容实体接口。 内容表默认名称为model_Content，XYCMS 后台可以新建新的内容表，或者修改现有内容表的字段|
 |interface IDatabaseApi	|数据库操作Api接口|
 |interface IEnvironment	|插件运行环境接口|
 |interface IJobContext	|包含XYCMS Cli命令行执行任务时的上下文信息|

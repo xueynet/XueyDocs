@@ -25,6 +25,6 @@ public abstract class PluginBase : Initializer, IMetadata
 |Tags { get; }	||
 |Title { get; }	||
 |Version { get; }	||
-|Initialize(…)	|初始化插件。 此方法将由 XYCMS CMS 系统载入插件时调用。|
+|Initialize(…)	|初始化插件。 此方法将由 XYCMS 系统载入插件时调用。|
 |abstract Startup(…)	|Startup方法是插件机制的核心，用于定义插件能够提供的各种服务。|
 

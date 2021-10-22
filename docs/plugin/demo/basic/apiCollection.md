@@ -1,6 +1,6 @@
-# XYCMS CMS 接口调用
+# XYCMS 接口调用
 
-XYCMS CMS 共提供了十种Api调用接口，为插件调用系统功能与数据提供支持：
+XYCMS 共提供了十种Api调用接口，为插件调用系统功能与数据提供支持：
 
 | Api调用接口 | 说明 |
 | :----- | :----- |
@@ -50,7 +50,7 @@ XYCMS CMS 共提供了十种Api调用接口，为插件调用系统功能与数�
 
 | 名称 | 说明 |
 | :----- | :----- |
-|SystemConfig|获取 XYCMS CMS 的系统配置字典|
+|SystemConfig|获取 XYCMS 的系统配置字典|
 |GetConfig|获取当前插件的配置信息|
 |RemoveConfig|删除当前插件的配置信息|
 |SetConfig|存储当前插件的配置信息。 (2 methods)|

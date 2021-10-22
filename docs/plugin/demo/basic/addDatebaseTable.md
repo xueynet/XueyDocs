@@ -15,7 +15,7 @@ tableName 代表表在数据库中的名称，请设置唯一的表名；tableCo
 ``` c#
 public class MyTableDao
 {
-    public const string TableName = "ss_my_table";
+    public const string TableName = "xycms_my_table";
 
     public static List<TableColumn> Columns => new List<TableColumn>
     {

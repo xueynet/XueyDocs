@@ -1,6 +1,6 @@
 # IContentInfo interface
 
-内容实体接口。 内容表默认名称为model_Content，XYCMS CMS 后台可以新建新的内容表，或者修改现有内容表的字段。
+内容实体接口。 内容表默认名称为model_Content，XYCMS 后台可以新建新的内容表，或者修改现有内容表的字段。
 
 ``` c#
 public interface IContentInfo : IAttributes

@@ -17,7 +17,7 @@ public class Main : PluginBase
 {
     public override void Startup(IService service)
     {
-        service.AddContentModel("ss_jobs", new List<TableColumn>
+        service.AddContentModel("xycms_jobs", new List<TableColumn>
         {
             new TableColumn
             {

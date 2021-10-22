@@ -1,6 +1,6 @@
 # 添加STL解析器
 
-STL解析器是 XYCMS CMS 解析标签并生成静态页面的核心，通过添加插件自己的STL解析器，插件即可拥有自己的专属标签，方便模板调用。
+STL解析器是 XYCMS 解析标签并生成静态页面的核心，通过添加插件自己的STL解析器，插件即可拥有自己的专属标签，方便模板调用。
 
 ``` c#
 public IService AddStlElementParser(string elementName, Func<IParseContext, string> parse)
