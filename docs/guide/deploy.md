@@ -59,6 +59,28 @@ XYCMS 通过反向代理服务器（如 IIS、Nginx 或 Apache）间接与 Inter
 内容待完善
 
 
-### Docker
+## Docker
 
-内容待完善
+
+### 运行Windows WT
+以下介绍Windows下 Docker Desktop 创建镜像
+
+**依次运行以下代码**
+```
+docker --version
+```
+```
+docker pull xueynet/xycms:latest
+```
+```
+docker -image ls
+```
+```
+docker ps -a
+```
+```
+docker run -e TZ="Asia/Shanghai2" -d --name kingwelson-xycmss -p 8004:80 --restart=always -v D:\Work\T_kingwelson\wwwroot:/app/wwwroot -e XYCMS_SECURITY_KEY=e2a3d303-ac9b-41ff-9154-930710af0845 -e XYCMS_DATABASE_TYPE=SQLite xueynet/xycms:latest
+```
+>运行完成后我们可以看到已在docker中创建了实例 kingwelson-xycmss RUNNING PORT:8004
+
+![04](/assets/img/stl/demo/2021102104.jpg)

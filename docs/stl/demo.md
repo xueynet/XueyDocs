@@ -2,6 +2,34 @@
 
 在此，我们将从零开始进行项目模板Docker本地运行。
 
+## 建立Git仓库
+第一步：cd到你的本地项目根目录下，执行git命令
+```
+git init
+```
+第二步：将项目的所有文件添加到仓库中
+```
+git add
+```
+第三步：将add的文件commit到仓库
+```
+git commit -m "注释语句"
+```
+第四步：去github上创建自己的repository,拿到创建的仓库的https地址
+
+第五步：将本地的仓库关联到github上
+```
+git remote add origin 自己的仓库url地址
+```
+第六步，上传代码到github远程仓库
+```
+git push -u origin master
+```
+>第一次上传有可能会遇到push失败的情况，那是因为跟SVN一样，github上有一个README.md 文件没有下载下来 。我们得先
+```
+git pull --rebase origin master
+```
+
 ## 使用Visual Studio Code或Git克隆远程仓库
 
 1.Visual Studio Code 克隆远程仓库
@@ -21,7 +49,7 @@
 >在项目列表中 README.md 文件找到Docker命令
 
 ```
-docker run -e TZ="Asia/Shanghai2" -d --name kingwelson-xycmss -p 8004:80 --restart=always -v D:\Work\T_kingwelson\wwwroot:/app/wwwroot -e XYCMS_SECURITY_KEY=e2a3d303-ac9b-41ff-9154-930710af0845 -e XYCMS_DATABASE_TYPE=SQLite xueynet/xycms:8.0.2
+docker run -e TZ="Asia/Shanghai2" -d --name kingwelson-xycmss -p 8004:80 --restart=always -v D:\Work\T_kingwelson\wwwroot:/app/wwwroot -e XYCMS_SECURITY_KEY=e2a3d303-ac9b-41ff-9154-930710af0845 -e XYCMS_DATABASE_TYPE=SQLite xueynet/xycms:latest
 ```
 ## 运行Windows WT
 
@@ -30,7 +58,7 @@ docker run -e TZ="Asia/Shanghai2" -d --name kingwelson-xycmss -p 8004:80 --resta
 docker --version
 ```
 ```
-docker pull xueynet/xycms:8.0.2
+docker pull xueynet/xycms:latest
 ```
 ```
 docker -image ls
@@ -39,7 +67,7 @@ docker -image ls
 docker ps -a
 ```
 ```
-docker run -e TZ="Asia/Shanghai2" -d --name kingwelson-xycmss -p 8004:80 --restart=always -v D:\Work\T_kingwelson\wwwroot:/app/wwwroot -e XYCMS_SECURITY_KEY=e2a3d303-ac9b-41ff-9154-930710af0845 -e XYCMS_DATABASE_TYPE=SQLite xueynet/xycms:8.0.2
+docker run -e TZ="Asia/Shanghai2" -d --name kingwelson-xycmss -p 8004:80 --restart=always -v D:\Work\T_kingwelson\wwwroot:/app/wwwroot -e XYCMS_SECURITY_KEY=e2a3d303-ac9b-41ff-9154-930710af0845 -e XYCMS_DATABASE_TYPE=SQLite xueynet/xycms:latest
 ```
 >运行完成后我们可以看到已在docker中创建了实例 kingwelson-xycmss RUNNING PORT:8004
 
