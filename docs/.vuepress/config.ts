@@ -79,7 +79,7 @@ export default defineUserConfig<DefaultThemeOptions>({
       '@vuepress/plugin-docsearch',
       {
         apiKey: '0a32dfb6f95192cc7333e60f37a195cb',
-        indexName: 'vuepress',
+        indexName: 'xycms',
         searchParameters: {
           facetFilters: ['XYCMS'],
         },
