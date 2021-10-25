@@ -2,9 +2,11 @@
 
 已发布最新安装包：基于windows/Linux/Docker的版本
 
-windows版本：https://dl.xuey.net/cms/8.0.3/xycms-8.0.3-windows-x64.zip
-Linux版本：https://dl.xuey.net/cms/8.0.3/xycms-8.0.3-linux-x64.tar.gz
-Docker版本：docker pull xueynet/xycms:8.0.3
+|环境|下载地址|
+|:----|:----|
+| windows | https://dl.xuey.net/cms/8.0.3/xycms-8.0.3-windows-x64.zip |
+| Linux | https://dl.xuey.net/cms/8.0.3/xycms-8.0.3-linux-x64.tar.gz |
+| Docker | `docker pull xueynet/xycms:8.0.3` |
 
 ### 更新简介
 

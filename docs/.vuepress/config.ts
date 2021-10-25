@@ -1,31 +1,49 @@
-import * as chokidar from 'chokidar'
-import type { UserConfig, DefaultThemeOptions } from 'vuepress'
-import { chalk, logger } from '@vuepress/utils'
+import { defineUserConfig } from '@vuepress/cli'
+import type { DefaultThemeOptions } from '@vuepress/theme-default'
+import { path } from '@vuepress/utils'
 import { navbar, sidebar } from './configs'
 
-const config: UserConfig<DefaultThemeOptions> = {
+const isProd = process.env.NODE_ENV === 'production'
 
-  title: '文档中心',
-  description: 'XYCMS Docs',
+export default defineUserConfig<DefaultThemeOptions>({
+  base: '/',
+
+  // site-level locales config
+  locales: {
+    '/': {
+      lang: 'zh-CN',
+      title: '文档中心',
+      description: 'XYCMS Docs',
+    },
+  },
+
+  bundler:
+    // specify bundler via environment variable
+    process.env.DOCS_BUNDLER ?? '@vuepress/webpack',
+    // use vite in dev, use webpack in prod
+    //(isProd ? '@vuepress/webpack' : '@vuepress/vite'),
 
   themeConfig: {
     logo: '/assets/img/logo.png',
+
+    repo: 'xueynet/XueyDocs',
+
+    docsDir: 'docs',
+
     // theme-level locales config
     locales: {
-      /**
-       * locale config
-       *
-       * As the default locale of @vuepress/theme-default is English,
-       * we don't need to set all of the locale fields
-       */
       '/': {
         // navbar
         navbar: navbar.zh,
+        selectLanguageName: '简体中文',
+        selectLanguageText: '选择语言',
+        selectLanguageAriaLabel: '选择语言',
 
         // sidebar
         sidebar: sidebar.zh,
 
         // page meta
+        editLinkText: '在 GitHub 上编辑此页',
         lastUpdatedText: '上次更新',
         contributorsText: '贡献者',
 
@@ -43,25 +61,34 @@ const config: UserConfig<DefaultThemeOptions> = {
         ],
         backToHome: '返回首页',
 
-        // other
+        // a11y
         openInNewWindow: '在新窗口打开',
+        toggleDarkMode: '切换夜间模式',
+        toggleSidebar: '切换侧边栏',
       },
+    },
+
+    themePlugins: {
+      // only enable git plugin in production mode
+      git: isProd,
     },
   },
 
-evergreen: process.env.NODE_ENV !== 'production',
-
-onWatched: (_, restart) => {
-  const watcher = chokidar.watch('configs/**/*.ts', {
-    cwd: __dirname,
-    ignoreInitial: true,
-  })
-  watcher.on('change', async (file) => {
-    logger.info(`file ${chalk.magenta(file)} is modified`)
-    await watcher.close()
-    await restart()
-  })
-},
-}
-
-export = config
+  plugins: [
+    [
+      '@vuepress/plugin-docsearch',
+      {
+        apiKey: '0a32dfb6f95192cc7333e60f37a195cb',
+        indexName: 'vuepress',
+        searchParameters: {
+          facetFilters: ['XYCMS'],
+        },
+        locales: {
+          '/': {
+            placeholder: '搜索文档',
+          },
+        },
+      },
+    ],
+  ],
+})
