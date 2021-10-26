@@ -56,8 +56,3 @@
 |AllowAddSubContent|	bool|		|允许添加子新闻|
 |RelatedContentId|	Integer|		|关联父级新闻Id|
 |SubContentNum|	Integer|		|子新闻数量|
-
-
-<style>
-@@import url("/assets/css/table_four_col.css");
-</style>
