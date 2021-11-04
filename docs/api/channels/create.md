@@ -49,7 +49,7 @@ POST /api/v1/channels/{siteId} HTTP/1.1
 ```
 POST /api/v1/channels/1476 HTTP/1.1
 Content-Type: application/json
-X-SS-API-KEY: 7cd22002-27a7-4c5d-ba4d-a1c108a20eaf
+X-XY-API-KEY: 7cd22002-27a7-4c5d-ba4d-a1c108a20eaf
 
 {
   "channelName": "栏目标题"
@@ -63,7 +63,7 @@ X-SS-API-KEY: 7cd22002-27a7-4c5d-ba4d-a1c108a20eaf
 ```
 POST /api/v1/channels/1476 HTTP/1.1
 Content-Type: application/json
-X-SS-API-KEY: 7cd22002-27a7-4c5d-ba4d-a1c108a20eaf
+X-XY-API-KEY: 7cd22002-27a7-4c5d-ba4d-a1c108a20eaf
 
 {
   "parentId": 1481,

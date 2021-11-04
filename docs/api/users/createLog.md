@@ -37,7 +37,7 @@ POST /api/v1/users/{id}/logs HTTP/1.1
 ```
 POST /api/v1/users/1/logs HTTP/1.1
 Content-Type: application/json
-X-SS-API-KEY: 7cd22002-27a7-4c5d-ba4d-a1c108a20eaf
+X-XY-API-KEY: 7cd22002-27a7-4c5d-ba4d-a1c108a20eaf
 
 {
   "action": "访问页面",

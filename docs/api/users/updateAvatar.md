@@ -29,7 +29,7 @@ POST /api/v1/users/{id}/avatar HTTP/1.1
 ```
 POST /api/v1/users/1008/avatar HTTP/1.1
 Content-Type: multipart/form-data
-X-SS-API-KEY: 7cd22002-27a7-4c5d-ba4d-a1c108a20eaf
+X-XY-API-KEY: 7cd22002-27a7-4c5d-ba4d-a1c108a20eaf
 ```
 
 #### 返回示例

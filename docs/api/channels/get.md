@@ -32,7 +32,7 @@ GET /api/v1/channels/{siteId}/{channelId} HTTP/1.1
 ```
 GET /api/v1/channels/1476/1477 HTTP/1.1
 Content-Type: application/json
-X-SS-API-KEY: 7cd22002-27a7-4c5d-ba4d-a1c108a20eaf
+X-XY-API-KEY: 7cd22002-27a7-4c5d-ba4d-a1c108a20eaf
 ```
 
 #### 返回示例

@@ -35,7 +35,7 @@ XYCMS REST API 通过 URL 地址提供访问接口，为了测试是否能够访
 
 ### 通过 Header 发送 API 密钥
 
-使用 Header 方法送 API 密钥需要在发起请求时将密钥放到 **X-SS-API-KEY** Header 中：
+使用 Header 方法送 API 密钥需要在发起请求时将密钥放到 **X-XY-API-KEY** Header 中：
 
 请求
 
@@ -46,7 +46,7 @@ POST https://example.com/api/v1/contents HTTP/1.1
 请求 Header
 
 ```
-X-SS-API-KEY: 7cd22002-27a7-4c5d-ba4d-a1c108a20eaf
+X-XY-API-KEY: 7cd22002-27a7-4c5d-ba4d-a1c108a20eaf
 ```
 
 响应

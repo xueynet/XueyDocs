@@ -35,7 +35,7 @@ POST /api/v1/administrators/actions/resetPassword HTTP/1.1
 ```
 POST /api/v1/administrators/actions/resetPassword HTTP/1.1
 Content-Type: application/json
-X-SS-API-KEY: 7cd22002-27a7-4c5d-ba4d-a1c108a20eaf
+X-XY-API-KEY: 7cd22002-27a7-4c5d-ba4d-a1c108a20eaf
 
 {
   "account": "test5",
