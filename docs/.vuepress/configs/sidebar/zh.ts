@@ -110,6 +110,7 @@ export const zh: SidebarConfig = {
             text: '插件',
             children: [
                 '/plugin/demo/README.md',
+                '/plugin/censor/README.md',
                 '/plugin/comments/README.md',
                 '/plugin/form/README.md',
                 '/plugin/hints/README.md',
@@ -125,30 +126,60 @@ export const zh: SidebarConfig = {
     ],
     '/plugin/demo': [
         {
-            text: '示例插件',
+            text: '插件开发',
             children: [
                 '/plugin/demo/README.md',
-                '/plugin/demo/hello-world.md',
-                '/plugin/demo/basic/README.md',
+                '/plugin/demo/development/README.md',
+                '/plugin/demo/datory/README.md',
+                '/plugin/demo/debug-publish/debug.md',
                 '/plugin/demo/sdk/README.md',
                 {
-                  text: '返回上级',
-                  link: '/plugin/README.md',
+                    text: '返回上级',
+                    link: '/plugin/README.md',
                 }
             ],
         },
     ],
-    '/plugin/demo/basic': [
+    '/plugin/demo/development': [
         {
             text: '插件开发基础',
             children: [
-                '/plugin/demo/basic/README.md',
-                '/plugin/demo/basic/addMenu.md',
-                '/plugin/demo/basic/addDatebaseTable.md',
-                '/plugin/demo/basic/database.md',
-                '/plugin/demo/basic/addContentModel.md',
-                '/plugin/demo/basic/addStlParser.md',
-                '/plugin/demo/basic/apiCollection.md',
+                '/plugin/demo/development/README.md',
+                '/plugin/demo/development/menus.md',
+                '/plugin/demo/development/urlServices.md',
+                '/plugin/demo/development/database.md',
+                '/plugin/demo/development/stlParser.md',
+                '/plugin/demo/development/sscmsApi.md',
+                {
+                    text: '返回上级',
+                    link: '/plugin/demo/README.md',
+                }
+            ],
+        },
+    ],
+    '/plugin/demo/datory': [
+        {
+            text: 'Datory框架参考',
+            children: [
+                '/plugin/demo/datory/README.md',
+                '/plugin/demo/datory/models.md',
+                '/plugin/demo/datory/select.md',
+                '/plugin/demo/datory/query.md',
+                '/plugin/demo/datory/insert-update-delete.md',
+                '/plugin/demo/datory/cache.md',
+                {
+                    text: '返回上级',
+                    link: '/plugin/demo/README.md',
+                }
+            ],
+        },
+    ],
+    '/plugin/demo/debug-publish': [
+        {
+            text: '调试与发布',
+            children: [
+                '/plugin/demo/debug-publish/debug.md',
+                '/plugin/demo/debug-publish/publish.md',
                 {
                     text: '返回上级',
                     link: '/plugin/demo/README.md',
@@ -216,6 +247,20 @@ export const zh: SidebarConfig = {
                 {
                     text: '返回上级',
                     link: '/plugin/demo/README.md',
+                }
+            ],
+        },
+    ],
+    '/plugin/censor': [
+        {
+            text: '内容审查插件',
+            children: [
+                '/plugin/censor/README.md',
+                '/plugin/censor/settings.md',
+                '/plugin/censor/test.md',
+                {
+                    text: '返回上级',
+                    link: '/plugin/README.md',
                 }
             ],
         },
