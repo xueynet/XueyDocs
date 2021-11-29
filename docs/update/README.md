@@ -4,7 +4,7 @@
 
 |环境|下载地址|
 |:----|:----|
-| windows | https://dl.xuey.net/cms/8.0.3/xycms-8.0.3-windows-x64.zip |
+| windows | https://dl.xuey.net/cms/8.0.3/xycms-8.0.3-win-x64.zip |
 | Linux | https://dl.xuey.net/cms/8.0.3/xycms-8.0.3-linux-x64.tar.gz |
 | Docker | `docker pull xueynet/xycms:8.0.3` |
 
