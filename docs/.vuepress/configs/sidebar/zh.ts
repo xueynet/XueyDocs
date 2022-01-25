@@ -593,6 +593,21 @@ export const zh: SidebarConfig = {
             ],
         },
     ],
+    '/use/': [
+        {
+            text: '使用',
+            children: [
+                '/use/README.md',
+                '/use/add-channel.md',
+                '/use/add-content.md',
+                '/use/edit-channel.md',
+                '/use/edit-content.md',
+                '/use/set-template.md',
+                '/use/set-page.md',
+                '/use/build-page.md',
+            ],
+        },
+    ],
     '/dictionary/': [
         {
             text: '字典',

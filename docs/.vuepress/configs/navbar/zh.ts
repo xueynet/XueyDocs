@@ -25,6 +25,10 @@ export const zh: NavbarConfig = [
     text: '接口',
     link: '/api/',
   },
+ {
+    text: '使用',
+    link: '/use/',
+ },
   {
     text: '字典',
     link: '/dictionary/',
